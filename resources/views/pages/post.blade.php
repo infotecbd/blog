@@ -1,4 +1,7 @@
 @extends('layouts.master')
+
+
+@section('content')
 <body>
   
     <section id="blog">
@@ -206,3 +209,5 @@
     
 </body>
 </html>
+
+@endsection

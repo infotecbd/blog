@@ -12,4 +12,4 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', [HomeController::class, 'home']);
 
-Route::resource('/post', PostController::class);
+Route::resource('/', PostController::class);
