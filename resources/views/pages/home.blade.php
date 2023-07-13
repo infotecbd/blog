@@ -17,7 +17,7 @@
 <body>
   
     <section id="blog">
-        <!--Heading   --> 
+        <!--Heading   ----> 
         <strong>Recent Blog</strong>
         <h3>Our Blog</h3>
    
