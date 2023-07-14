@@ -1,33 +1,29 @@
 @extends('layouts.master')
 
 @section('content')
+<section id="blog">
+<div class="blog-box-container">
 <div class="container">
   <form action="action_page.php">
+  @csrf
     <div class="row">
       <div class="col-25">
-        <label for="fname">First Name</label>
+        <label for="title">Title</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="title" name="title" placeholder="Title">
       </div>
     </div>
+    
     <div class="row">
       <div class="col-25">
-        <label for="lname">Last Name</label>
+        <label for="Select Category">Category</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">Country</label>
-      </div>
-      <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+        <select id="category" name="category_name">
+          <option value="Artifical Inteligenece">Artifical Inteligenece</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Graphic Designer">Graphic Designer</option>
         </select>
       </div>
     </div>
@@ -44,4 +40,5 @@
     </div>
   </form>
 </div>
+</div></div>
 @endsection
