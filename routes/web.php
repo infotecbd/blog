@@ -12,5 +12,5 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', [HomeController::class, 'home']);
 
-Route::resource('/', PostController::class);
+Route::resource('post', PostController::class);
 Route::resource('/', CategoryController::class);

@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 
 @section('content')
@@ -6,6 +7,10 @@
 <div class="container">
   <form action="{{route('store')}}" method="POST">
   @csrf
+
+  @if (session()->has('success'))
+    <h1>{{ session('success') }}</h1>
+@endif
     <div class="row">
       <div class="col-25">
         <label for="Category_Name">Category Name</label>

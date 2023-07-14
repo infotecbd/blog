@@ -13,7 +13,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+       //
     }
 
     /**
@@ -39,7 +39,7 @@ class CategoryController extends Controller
        
         ]);
 
-        return redirect()->route('create')->withSuccess(['Successfuly inserted']);
+        return redirect()->route('create')->with(['success','Successfuly inserted']);
 
     }
 

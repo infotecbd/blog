@@ -21,6 +21,7 @@
       </div>
       <div class="col-75">
         <select id="category" name="category_name">
+       
           <option value="Artifical Inteligenece">Artifical Inteligenece</option>
           <option value="Web Development">Web Development</option>
           <option value="Graphic Designer">Graphic Designer</option>

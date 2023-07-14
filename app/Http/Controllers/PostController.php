@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Category;
 
 class PostController extends Controller
 {
@@ -19,9 +20,10 @@ class PostController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
-    {
-        return view('pages.create');
-        echo "create";
+    {   
+        $categories = Category::all();
+        return view('create', compact('categories'));
+     
     }
 
     /**
@@ -37,7 +39,7 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
